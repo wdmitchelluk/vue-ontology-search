@@ -1,7 +1,7 @@
 <template>
     <v-card>
         <v-card-title>{{result.label}}</v-card-title>
-        <v-card-subtitle href="{{result.iri}}">{{result.iri}}</v-card-subtitle>        
+        <v-card-subtitle>{{result.iri}}</v-card-subtitle>        
         <v-card-text v-if="result.description">{{result.description[0]}} </v-card-text>        
     </v-card>
 </template>
@@ -34,7 +34,12 @@ export default defineComponent({
 
 <style scoped>
 .v-card{
-    margin-bottom: 15px;
+    background-color: #191B1C;
+    color: #d8d4cf;
+    margin-top: 15px;
     padding-bottom: 10px;
+}
+.v-card-text {
+    color: #d8d4cf;
 }
 </style>
